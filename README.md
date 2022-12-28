@@ -1,5 +1,5 @@
 # ABCD-PHEWAS
-GitHub Repository for ABCD PRS-PheWAS
+GitHub Repository for ABCD PRS-PheWAS. The analyses were conducted in the order of the files listed below.
 
 ## File names + Descriptions
 
@@ -12,6 +12,9 @@ CD_sumstats.R
 
 LDSC.R   
     This script computes the genetic covariance matrix among the 11 psychiatric phenotypes.
+
+split_sumstats_CD2.R   
+    This script splits the sumstats created from CD_sumstats.R into sets of 6000 SNPs.
     
 multi_GWAS_CD2.sh  
 multi_GWAS_CD2.R  
