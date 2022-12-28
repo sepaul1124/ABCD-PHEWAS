@@ -10,6 +10,9 @@ cross_disorder_munge.R
 CD_sumstats.R  
     This script prepares the summary statistics for GWAS, including coding alleles to have the same reference allele across phenotypes and scaling coefficients and standard errors. 
 
+LDSC.R   
+    This script computes the genetic covariance matrix among the 11 psychiatric phenotypes.
+    
 multi_GWAS_CD2.sh  
 multi_GWAS_CD2.R  
     These files contain code to conduct the multivariate GWAS. The summary statistics generated from the CD_sumstats.R script are loaded into R along with the LDSC covariance matrix. A correlated factors model is specified, including SNP effects. 
