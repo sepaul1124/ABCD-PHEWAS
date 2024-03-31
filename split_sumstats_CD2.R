@@ -5,7 +5,9 @@ load("CD_sumstats.RData")
 split_sumstats <- split(CD_sumstats, (as.numeric(rownames(CD_sumstats))-1) %/% 6000)
 ### save each data frame as its own text file
 ### you can delete these files after you're done with the analyses
-lapply(names(split_sumstats), function(x){write.table(split_sumstats[[x]], file = paste("./split_sumstats/split_sumstats2/sumstats", x,".txt", sep = ""), quote = FALSE, row.names=FALSE)})
+lapply(names(split_sumstats), function(x){write.table(split_sumstats[[x]], 
+                                                      file = paste("./split_sumstats/split_sumstats2/sumstats", x,".txt", sep = ""), 
+                                                      quote = FALSE, row.names=FALSE)})
 
 
 ### determine number of SNP sets and then save to a file
